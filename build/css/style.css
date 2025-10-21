@@ -2916,34 +2916,34 @@ html.with-fancybox body.hide-scrollbar {
 
 @font-face {
   font-style: normal;
-  font-weight: 400;
-  font-family: "Lato";
+  font-weight: 800;
+  font-family: "Onest";
   font-display: swap;
-  src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+  src: url("../fonts/Onest-ExtraBold.woff2") format("woff2"), url("../fonts/Onest-ExtraBold.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
-  font-weight: 600;
-  font-family: "Lato";
+  font-weight: 500;
+  font-family: "Onest";
   font-display: swap;
-  src: url("../fonts/Lato-SemiBold.woff2") format("woff2"), url("../fonts/Lato-SemiBold.woff") format("woff");
+  src: url("../fonts/Onest-Medium.woff2") format("woff2"), url("../fonts/Onest-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Onest";
+  font-display: swap;
+  src: url("../fonts/Onest-Regular.woff2") format("woff2"), url("../fonts/Onest-Regular.woff") format("woff");
 }
 
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Lato";
+  font-family: "Onest";
   font-display: swap;
-  src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: 800;
-  font-family: "Lato";
-  font-display: swap;
-  src: url("../fonts/Lato-ExtraBold.woff2") format("woff2"), url("../fonts/Lato-ExtraBold.woff") format("woff");
+  src: url("../fonts/Onest-SemiBold.woff2") format("woff2"), url("../fonts/Onest-SemiBold.woff") format("woff");
 }
 
 *,
@@ -2963,9 +2963,8 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-family: "Onest", sans-serif;
   color: #000000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -3219,24 +3218,7 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 33px 0 32px;
-}
-
-.header__logo {
-  position: relative;
-  display: block;
-  width: 247px;
-  height: 35px;
-  margin-right: 40px;
-}
-
-.header__logo svg {
-  display: block;
-  width: 247px;
-  height: 35px;
+  gap: 30px;
 }
 
 .main-nav__toggle {
@@ -4140,14 +4122,6 @@ button,
 }
 
 @media (max-width: 1023px) {
-  .header__wrapper {
-    max-width: unset;
-  }
-
-  .header__logo {
-    margin-right: 20px;
-  }
-
   .main-nav__item {
     margin-right: 30px;
   }
@@ -4182,16 +4156,6 @@ button,
 }
 
 @media (max-width: 767px) {
-  .header__logo {
-    z-index: 11;
-    width: 165px;
-    margin-right: 0;
-  }
-
-  .header__logo svg {
-    width: 165px;
-  }
-
   .main-nav__toggle {
     display: -webkit-box;
     display: -ms-flexbox;
