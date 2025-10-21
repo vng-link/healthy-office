@@ -2,15 +2,23 @@
 
 .container {
   width: 100%;
-  max-width: calc(1600px + 40px * 2);
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 0 40px;
-
-  @include vp-1023 {
-    padding: 0 30px;
+  padding: 0 20px;
+  @media (max-width: 1479px) {
+    max-width: 1200px;
   }
 
-  @include vp-767 {
-    padding: 0 20px;
+  @include vp-1199 {
+    max-width: 808px
   }
+
+  @include vp-807 {
+    max-width: 616px
+  }
+
+  @include vp-615 {
+    max-width: 400px;
+  }
+
 }

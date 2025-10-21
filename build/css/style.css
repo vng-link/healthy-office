@@ -3170,9 +3170,9 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1680px;
+  max-width: 1480px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 .header {
@@ -4121,17 +4121,25 @@ button,
   }
 */
 
+@media (max-width: 1479px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 @media (max-width: 1439px) {
   .intro__wrapper {
     padding: 203px 0;
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
   .container {
-    padding: 0 30px;
+    max-width: 808px;
   }
+}
 
+@media (max-width: 1023px) {
   .header__wrapper {
     max-width: unset;
   }
@@ -4167,11 +4175,13 @@ button,
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 807px) {
   .container {
-    padding: 0 20px;
+    max-width: 616px;
   }
+}
 
+@media (max-width: 767px) {
   .header__logo {
     z-index: 11;
     width: 165px;
@@ -4284,6 +4294,12 @@ button,
   .custom-checkbox__label {
     font-size: 22px;
     line-height: 33px;
+  }
+}
+
+@media (max-width: 615px) {
+  .container {
+    max-width: 400px;
   }
 }
 
