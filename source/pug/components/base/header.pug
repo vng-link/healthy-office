@@ -4,6 +4,24 @@ mixin header(headerMods, currentUrl)
       {
         href: "#",
         text: "Каталог",
+        dropdown: [
+            {
+              href: "#",
+              text: "Офисные кресла",
+            },
+            {
+              href: "#",
+              text: "Рабочие столы",
+            },
+            {
+              href: "#",
+              text: "Велотренажеры",
+            },
+            {
+              href: "#",
+              text: "Другая мебель",
+            },
+        ]
       },
       {
         href: "#",
@@ -29,10 +47,21 @@ mixin header(headerMods, currentUrl)
         .header__main-nav.main-nav
           .main-nav__menu
             .container
-              ul.list-reset.main-nav__list
+              ul.list-reset.main-nav__list(data-header-accordion)
                 each item in headerLinks
-                  li.main-nav__item
-                    a.main-nav__link(href=item.href)!=item.text
+                  li.main-nav__item(class={"main-nav__item--dropdown" : item.dropdown} data-header-accordion-item=!!item.dropdown)
+                    .main-nav__item-wrapper
+                      a.main-nav__link(href=item.href)!=item.text
+                      if (item.dropdown)
+                        button.btn-reset.main-nav__btn(type="button" data-header-accordion-btn=!!item.dropdown)
+                          span
+                            +icon("dropdown-mobile", 9, 6)
+                    if (item.dropdown)
+                      .main-nav__sub-list-handler
+                        ul.list-reset.main-nav__sub-list
+                          each subitem in item.dropdown
+                            li.main-nav__sub-item
+                                a.main-nav__sub-link(href=subitem.href)!=subitem.text
 
         .header__actions
             a.header__phone(href="tel:84951233414", aria-label="Позвонить по телефону") +7 (495) 123-34-14
