@@ -34,11 +34,12 @@ mixin header(headerMods, currentUrl)
                   li.main-nav__item
                     a.main-nav__link(href=item.href)!=item.text
 
-          button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.main-nav__toggle
-            span
-            span
-            span
         .header__actions
             a.header__phone(href="tel:84951233414", aria-label="Позвонить по телефону") +7 (495) 123-34-14
-            a.header__cart(href="#", aria-label="Перейти в корзину")
-                +icon("shopping-cart", 17, 17)
+            .header__handler
+              a.header__cart(href="#", aria-label="Перейти в корзину")
+                  +icon("shopping-cart", 20, 20)
+              button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.header__toggle
+                span
+                span
+                span

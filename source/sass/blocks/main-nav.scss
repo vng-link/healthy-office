@@ -2,57 +2,6 @@
 @use "../variables" as *;
 
 .main-nav {
-  &__toggle {
-    z-index: 11;
-    position: relative;
-    display: none;
-
-    width: 30px;
-    height: 30px;
-
-    cursor: pointer;
-    user-select: none;
-
-    transition: opacity $trans-default;
-
-    @include vp-767 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    span {
-      display: block;
-      position: absolute;
-
-      left: 0;
-
-      width: 100%;
-      height: 3px;
-
-      background-color: $color-default-white;
-
-      transition: transform $trans-default, opacity $trans-default, visibility $trans-default;
-
-      &:nth-child(1) {
-        top: 0;
-      }
-
-      &:nth-child(2) {
-        top: 50%;
-
-        transform: translateY(-50%);
-      }
-
-      &:nth-child(3) {
-        bottom: 0;
-      }
-    }
-
-    @include hover-focus {
-      opacity: 0.8;
-    }
-  }
 
   &__list {
     display: flex;
@@ -60,7 +9,7 @@
   }
 
   &__item {
-   
+
   }
 
   &__link {
@@ -73,6 +22,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include vp-1199 {
+      color: $color-default-black;
+    }
+  }
+
+  &__menu {
+    @include vp-1199 {
+      z-index: 10;
+      position: fixed;
+      overflow: auto;
+      top: 54px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 35px 0 0 0;
+      background-color: $color-default-white;
+      transition: transform $trans-default, visibility $trans-default, opacity $trans-default;
+      transform: translateX(100%);
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
