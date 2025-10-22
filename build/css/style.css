@@ -4183,6 +4183,7 @@ button,
 
 .categories {
   padding: 60px 0 100px 0;
+  background-color: #ffffff;
 }
 
 .categories__wrapper {
@@ -4335,6 +4336,29 @@ button,
   font-size: 34px;
   line-height: 140%;
   color: #000000;
+}
+
+.cta {
+  padding: 300px 0;
+}
+
+[data-scroll-animation] {
+  z-index: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+[data-scroll-animation-block] {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  overflow: hidden;
 }
 
 /* @mixin hover-focus {
@@ -4574,6 +4598,18 @@ button,
 @media (max-width: 807px) {
   .container {
     max-width: 616px;
+  }
+
+  [data-scroll-animation] {
+    height: auto;
+  }
+
+  [data-scroll-animation-block] {
+    z-index: 0;
+    position: relative;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 

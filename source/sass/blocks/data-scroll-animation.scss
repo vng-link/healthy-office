@@ -1,0 +1,29 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+[data-scroll-animation] {
+  z-index: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+
+  @include vp-807 {
+    height: auto;
+  }
+}
+
+[data-scroll-animation-block] {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  overflow: hidden;
+
+  @include vp-807 {
+    z-index: 0;
+    position: relative;
+    transform: translateY(0);
+  }
+}

@@ -3,6 +3,7 @@
 
 .categories {
   padding: 60px 0 100px 0;
+  background-color: $color-default-white;
   @include vp-1199 {
     padding: 50px 0 50px 0;
   }
