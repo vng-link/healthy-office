@@ -1,0 +1,74 @@
+mixin categories()
+  -
+    const categoryItems = [
+      {
+        href: "#",
+        title: "Офисные кресла",
+        image: {
+          src: "category-1",
+          format: "webp",
+          width: "486",
+          height: "455",
+        },
+        big: 'true',
+      },
+      {
+        href: "#",
+        title: "Рабочие столы",
+        image: {
+          src: "category-2",
+          format: "webp",
+          width: "486",
+          height: "455",
+        },
+        big: 'true',
+      },
+
+      {
+        href: "#",
+        title: "Велотренажеры",
+        image: {
+          src: "category-33",
+          format: "webp",
+          width: "234",
+          height: "455",
+        },
+        big: 'false',
+      },
+
+      {
+        href: "#",
+        title: "Другая мебель",
+        image: {
+          src: "category-4",
+          format: "webp",
+          width: "234",
+          height: "455",
+        },
+        big: 'false',
+      },
+
+
+
+    ]
+
+
+  section.categories
+      .container
+          h2.categories__title.title Комфорт и забота в каждой детали
+          p.categories__description Мы вкладываем душу в детали, чтобы ваша жизнь стала уютнее и интереснее
+          .categories__wrapper
+              each item in categoryItems
+                  .categories__item(class={"categories__item--big" : item.big==='true'})
+                      a.category-card(href="#")
+                        .category-card__bottom
+                          .category-card__wrapper
+                            .category-card__handler
+                              h3.category-card__title!=item.title
+                              .category-card__icon
+                                +icon("category-card-icon", 42, 42)
+                        .category-card__image
+                              +img("content/categories", item.image.src, item.image.format, item.image.width, item.image.height)
+                              //picture
+                                source(media="(max-width: 1199px)" srcset="img/content/categories/category-1.webp")
+                                img(src="img/content/categories/category-1.webp" width="486" height="455" alt="background")

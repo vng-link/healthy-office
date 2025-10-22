@@ -106,6 +106,7 @@
     line-height: 150%;
     color: $color-default-white;
     margin: 0;
+    font-weight: 400;
     @include vp-615 {
       font-size: 16px;
     }

@@ -6,6 +6,10 @@
 </defs><symbol id="btn-icon" viewBox="0 0 32 32"><g fill="none">
 <circle cx="16" cy="16" r="16" fill="#2EBE91"/>
 <path d="M13.5 11.5L19 16.5L13.5 21.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</g></symbol><symbol id="category-card-icon" viewBox="0 0 42 42"><g fill="none">
+<rect width="42" height="42" rx="10" fill="white"/>
+<rect x="0.5" y="0.5" width="41" height="41" rx="9.5" stroke="white" stroke-opacity="0.13"/>
+<path d="M26.0769 26.5385V15.9231H15.4615C15.2066 15.9231 15 15.7164 15 15.4615C15 15.2066 15.2066 15 15.4615 15H27V26.5385C27 26.7934 26.7934 27 26.5385 27C26.2836 27 26.0769 26.7934 26.0769 26.5385Z" fill="#4C3870"/>
 </g></symbol><symbol id="dropdown-mobile" viewBox="0 0 9 6"><g fill="none">
 <path d="M8.5 0.5L4.5 4.5L0.5 0.5" stroke="black" stroke-linecap="round"/>
 </g></symbol><symbol id="logo" viewBox="0 0 383 50"><g fill="none">
