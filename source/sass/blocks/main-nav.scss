@@ -73,9 +73,13 @@
     padding: 7px 21px 7px 21px;
     display: flex;
     align-items: center;
+    transition: opacity $trans-default;
     @include vp-1199 {
       color: $color-default-black;
       padding: 20px 0;
+    }
+    @include hover-focus {
+      opacity: 0.8;
     }
   }
 

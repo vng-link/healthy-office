@@ -3233,6 +3233,12 @@ button,
   font-size: 16px;
   line-height: 150%;
   color: #ffffff;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.header__phone:focus-visible {
+  opacity: 0.8;
 }
 
 .header__cart {
@@ -3252,6 +3258,12 @@ button,
 .header__cart svg {
   width: 20px;
   height: 20px;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.header__cart svg:focus-visible {
+  opacity: 0.8;
 }
 
 .header__toggle {
@@ -3371,6 +3383,12 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.main-nav__link:focus-visible {
+  opacity: 0.8;
 }
 
 .main-nav__sub-list {
@@ -4411,7 +4429,19 @@ button,
     background-color: var(--f-button-hover-bg);
   }
 
+  .header__phone:hover {
+    opacity: 0.8;
+  }
+
+  .header__cart svg:hover {
+    opacity: 0.8;
+  }
+
   .header__toggle:hover {
+    opacity: 0.8;
+  }
+
+  .main-nav__link:hover {
     opacity: 0.8;
   }
 
