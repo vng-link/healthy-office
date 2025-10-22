@@ -4587,6 +4587,12 @@ button,
   }
 }
 
+@media (max-width: 389px) {
+  .category-card {
+    height: 310px;
+  }
+}
+
 @media (hover: hover) {
   .f-button:hover:not([disabled]) {
     color: var(--f-button-hover-color);
