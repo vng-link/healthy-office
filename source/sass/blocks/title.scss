@@ -1,0 +1,18 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+
+.title {
+  font-family: $ff-onest;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 140%;
+  color: $color-default-black;
+  @include vp-1199 {
+    font-size: 30px;
+  }
+  @include vp-615 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}

@@ -38,7 +38,9 @@
 @use "blocks/categories";
 @use "blocks/cta";
 @use "blocks/data-scroll-animation";
-
+@use "blocks/page";
+@use "blocks/title";
+@use "blocks/category-card";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

@@ -1,0 +1,9 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.page {
+  padding-top: 38px;
+  @include vp-1199 {
+    padding-top: 50px;
+  }
+}
