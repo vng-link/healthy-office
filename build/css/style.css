@@ -4166,7 +4166,7 @@ button,
 }
 
 .categories {
-  padding: 60px 100px;
+  padding: 60px 0 100px 0;
 }
 
 .categories__wrapper {
@@ -4567,6 +4567,14 @@ button,
 
   .intro__description {
     font-size: 16px;
+  }
+
+  .categories__wrapper {
+    display: block;
+  }
+
+  .category-card {
+    height: 350px;
   }
 }
 

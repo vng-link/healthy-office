@@ -2,7 +2,7 @@
 @use "../variables" as *;
 
 .categories {
-  padding: 60px 100px;
+  padding: 60px 0 100px 0;
   &__wrapper {
     display: grid;
     grid-template-columns:  repeat(6, 1fr);
@@ -12,6 +12,9 @@
     }
     @include vp-1199 {
       grid-template-columns:  repeat(2, 1fr);
+    }
+    @include vp-615 {
+      display: block;
     }
   }
   &__item {
@@ -46,6 +49,9 @@
   overflow: hidden;
   position: relative;
   display: block;
+  @include vp-615 {
+    height: 350px;
+  }
   &__image {
     position: absolute;
     left: 0;
