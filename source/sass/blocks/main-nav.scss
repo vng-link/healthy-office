@@ -6,6 +6,9 @@
   &__list {
     display: flex;
     align-items: center;
+    @include vp-1199 {
+      display: block;
+    }
   }
 
   &__item {
@@ -20,7 +23,6 @@
     color: $color-default-white;
     padding: 7px 21px 7px 21px;
     display: flex;
-    justify-content: center;
     align-items: center;
     @include vp-1199 {
       color: $color-default-black;
