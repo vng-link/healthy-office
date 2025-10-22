@@ -37,14 +37,24 @@
     color: $color-black-russian-2;
   }
 
-  svg {
+  span {
     width: 32px;
     height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     right: 0;
     top: 50%;
     transform: translate(50%, -50%);
+    background-color: $color-shamrock;
+    border-radius: 100%;
+    svg {
+      width: 8px;
+      height: 12px;
+    }
   }
+
 
   @include hover-focus {
     background: rgba(255, 255, 255, 0.1);

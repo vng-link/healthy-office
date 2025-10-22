@@ -66,9 +66,6 @@ mixin categories()
                             .category-card__handler
                               h3.category-card__title!=item.title
                               .category-card__icon
-                                +icon("category-card-icon", 42, 42)
+                                +icon("category-card-icon", 12, 12)
                         .category-card__image
                               +img("content/categories", item.image.src, item.image.format, item.image.width, item.image.height)
-                              //picture
-                                source(media="(max-width: 1199px)" srcset="img/content/categories/category-1.webp")
-                                img(src="img/content/categories/category-1.webp" width="486" height="455" alt="background")
