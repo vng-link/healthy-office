@@ -3540,6 +3540,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 40px 0 50px 0;
 }
 
 .intro__logo {
