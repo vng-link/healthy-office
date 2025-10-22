@@ -3526,6 +3526,17 @@ button,
   object-fit: cover;
 }
 
+.intro__background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
 .intro__wrapper {
   position: relative;
   z-index: 2;
@@ -3546,10 +3557,23 @@ button,
 .intro__logo {
   position: relative;
   z-index: 2;
+  padding: 0 0 0 21px;
 }
 
 .intro__title {
-  margin: 0;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 125%;
+  color: #ffffff;
+  margin: 0 0 20px;
+  padding: 0 0 0 21px;
+}
+
+.intro__description {
+  font-size: 20px;
+  line-height: 150%;
+  color: #ffffff;
+  padding: 0 0 0 21px;
 }
 
 .accordion__button {
