@@ -8,7 +8,9 @@
   top: 38px;
   width: 100%;
   @include vp-1199 {
-    top: 50px;
+    top: 0px;
+    position: static;
+
   }
 
   &__background {

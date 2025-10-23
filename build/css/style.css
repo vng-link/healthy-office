@@ -3184,12 +3184,19 @@ button,
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   /*
-  &__test {
+  &__logo-scroll {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    width: 35px;
+    height: 18px;
+    display: none;
+    svg {
+      width: 35px;
+      height: 18px;
+    }
   }
-    */
+  */
 }
 
 .header.is-active {
@@ -3232,26 +3239,6 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 30px;
-}
-
-.header__logo-scroll {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 35px;
-  height: 18px;
-  display: none;
-}
-
-.header__logo-scroll svg {
-  width: 35px;
-  height: 18px;
 }
 
 .header__actions {
@@ -4575,7 +4562,8 @@ button,
   }
 
   .intro {
-    top: 50px;
+    top: 0px;
+    position: static;
   }
 
   .intro__wrapper {
