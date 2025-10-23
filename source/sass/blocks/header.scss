@@ -22,7 +22,7 @@
   &.is-active {
     background-color: $color-default-black;
     .header__logo-scroll {
-      display: block;
+      //display: block;
     }
   }
 
@@ -51,11 +51,13 @@
     }
   }
 
+  /*
   &__test {
     display: flex;
     align-items: center;
     gap: 30px;
   }
+    */
 
   &__wrapper {
     display: flex;

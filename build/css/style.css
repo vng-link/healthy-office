@@ -3183,14 +3183,17 @@ button,
   width: 100%;
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
+  /*
+  &__test {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+    */
 }
 
 .header.is-active {
   background-color: #000000;
-}
-
-.header.is-active .header__logo-scroll {
-  display: block;
 }
 
 .header.is-open .header__toggle span:nth-child(1) {
@@ -3216,16 +3219,6 @@ button,
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
-}
-
-.header__test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .header__wrapper {
