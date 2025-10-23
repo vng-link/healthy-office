@@ -6,6 +6,7 @@
   &__list {
     display: flex;
     align-items: center;
+
     @include vp-1199 {
       display: block;
     }
@@ -15,16 +16,23 @@
     @include vp-1199 {
       border-bottom: 1px solid $color-whisper;
     }
+
     &:first-child {
-      .main-nav__link {
-        padding: 7px 21px 7px 0;
+      @media (min-width: 1199px) {
+        .main-nav__link {
+          padding: 7px 21px 7px 0;
+        }
       }
+
+
     }
+
     &--dropdown {
       &.is-active {
         .main-nav__sub-list {
           display: block;
         }
+
         .main-nav__btn {
           svg {
             transform: rotate(180deg);
@@ -32,6 +40,7 @@
         }
       }
     }
+
     &:not(.main-nav__item--dropdown) {
       .main-nav__link {
         flex-grow: 1;
@@ -49,11 +58,13 @@
   &__btn {
     display: none;
     flex-shrink: 0;
+
     @include vp-1199 {
       display: flex;
       align-items: center;
       justify-content: flex-end;
       flex-grow: 1;
+
       span {
         display: flex;
         width: 22px;
@@ -63,6 +74,7 @@
         background-color: $color-alice-blue;
         border-radius: 100px;
       }
+
       svg {
         transition: transform $trans-default;
       }
@@ -79,10 +91,12 @@
     display: flex;
     align-items: center;
     transition: opacity $trans-default;
+
     @include vp-1199 {
       color: $color-default-black;
       padding: 20px 0;
     }
+
     @include hover-focus {
       opacity: 0.8;
     }

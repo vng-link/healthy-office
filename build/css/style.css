@@ -3343,10 +3343,6 @@ button,
   align-items: center;
 }
 
-.main-nav__item:first-child .main-nav__link {
-  padding: 7px 21px 7px 0;
-}
-
 .main-nav__item--dropdown.is-active .main-nav__sub-list {
   display: block;
 }
@@ -4416,6 +4412,12 @@ button,
     }
   }
 */
+
+@media (min-width: 1199px) {
+  .main-nav__item:first-child .main-nav__link {
+    padding: 7px 21px 7px 0;
+  }
+}
 
 @media (max-width: 1479px) {
   .container {
