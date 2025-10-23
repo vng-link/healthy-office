@@ -24,6 +24,7 @@ const getScrollAnimation = () => {
   const style = window.getComputedStyle(parent);
   const block = main.querySelector('[data-scroll-animation-block]');
   const lenis = new Lenis();
+  const header = document.querySelector("[data-header]");
 
   const raf = (time) => {
     lenis.raf(time);
@@ -40,6 +41,13 @@ const getScrollAnimation = () => {
       end: () => '+=' + block.offsetHeight,
       scrub: 1,
       pin: !0,
+      /*onLeave: () => {
+        console.log("hello 1")
+        header.classList.add("is-active");
+      },*/
+      onLeaveBack: () => {
+        console.log("hello 2")
+      },
     },
   }).to(block, {
     ease: 'none',
