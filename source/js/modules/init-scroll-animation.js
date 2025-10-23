@@ -25,6 +25,7 @@ const getScrollAnimation = () => {
   const block = main.querySelector('[data-scroll-animation-block]');
   const lenis = new Lenis();
   const header = document.querySelector("[data-header]");
+  const end = document.querySelector('[data-scroll-animation-end]');
 
   const raf = (time) => {
     lenis.raf(time);
@@ -38,8 +39,9 @@ const getScrollAnimation = () => {
     scrollTrigger: {
       trigger: main,
       start: `top-=${style.paddingTop} top`,
-      end: () => '+=' + block.offsetHeight,
+      end: '+=' + block.offsetHeight,
       scrub: 1,
+      markers: true,
       pin: !0,
       onLeave: () => {
         header.classList.add("is-active");
