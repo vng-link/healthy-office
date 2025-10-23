@@ -41,7 +41,7 @@ const getScrollAnimation = () => {
       start: `top-=${style.paddingTop} top`,
       end: '+=' + block.offsetHeight,
       scrub: 1,
-      //markers: true,
+      markers: true,
       pin: !0,
       onLeave: () => {
         header.classList.add("is-active");
