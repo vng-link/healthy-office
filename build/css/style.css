@@ -4220,7 +4220,7 @@ button,
 }
 
 .cta {
-  padding: 300px 0;
+  padding: 0 0 300px;
 }
 
 [data-scroll-animation] {
