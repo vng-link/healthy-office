@@ -3597,7 +3597,7 @@ button,
 .intro__logo {
   position: relative;
   z-index: 2;
-  padding: 0 0 35px 21px;
+  padding: 0 0 35px 0;
 }
 
 .intro__logo svg {
@@ -3606,7 +3606,6 @@ button,
 }
 
 .intro__content {
-  padding: 0 0 0 21px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4554,17 +4553,9 @@ button,
     padding: 25px 0 40px 0;
   }
 
-  .intro__logo {
-    padding: 0 0 35px 0;
-  }
-
   .intro__logo svg {
     width: 241px;
     height: 31px;
-  }
-
-  .intro__content {
-    padding: unset;
   }
 
   .intro__btn {

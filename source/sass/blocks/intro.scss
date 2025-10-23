@@ -46,10 +46,7 @@
   &__logo {
     position: relative;
     z-index: 2;
-    padding: 0 0 35px 21px;
-    @include vp-1199 {
-      padding: 0 0 35px 0;
-    }
+    padding: 0 0 35px 0;
     svg {
       width: 383px;
       height: 50px;
@@ -61,13 +58,9 @@
   }
 
   &__content {
-    padding: 0 0 0 21px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    @include vp-1199 {
-      padding: unset;
-    }
   }
 
   &__btn {
