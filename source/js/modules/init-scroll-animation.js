@@ -3,7 +3,7 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
 
 const main = document.querySelector('[data-scroll-animation]');
-const breakpointMedia = window.matchMedia('(max-width: 767px)');
+const breakpointMedia = window.matchMedia('(max-width: 807px)');
 
 let timeline = null;
 
