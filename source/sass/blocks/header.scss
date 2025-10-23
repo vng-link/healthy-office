@@ -21,6 +21,9 @@
 
   &.is-active {
     background-color: $color-default-black;
+    .header__logo-scroll {
+      display: block;
+    }
   }
 
   &.is-open {
@@ -48,12 +51,32 @@
     }
   }
 
+  &__test {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
   }
+
+  &__logo-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 18px;
+    display: none;
+    svg {
+      width: 35px;
+      height: 18px;
+    }
+  }
+
 
   &__actions {
     display: flex;

@@ -3189,6 +3189,10 @@ button,
   background-color: #000000;
 }
 
+.header.is-active .header__logo-scroll {
+  display: block;
+}
+
 .header.is-open .header__toggle span:nth-child(1) {
   top: 50%;
   -webkit-transform: rotate(45deg);
@@ -3214,6 +3218,16 @@ button,
   transform: translateX(0);
 }
 
+.header__test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3225,6 +3239,26 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 30px;
+}
+
+.header__logo-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 35px;
+  height: 18px;
+  display: none;
+}
+
+.header__logo-scroll svg {
+  width: 35px;
+  height: 18px;
 }
 
 .header__actions {
