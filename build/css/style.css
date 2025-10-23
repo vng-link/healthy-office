@@ -3184,8 +3184,7 @@ button,
   -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   /*
-  &__logo-scroll {
-    display: flex;
+  &__logo {
     justify-content: center;
     align-items: center;
     width: 35px;
