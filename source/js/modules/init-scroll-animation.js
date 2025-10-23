@@ -23,8 +23,6 @@ const getScrollAnimation = () => {
   const parent = main.parentElement;
   const style = window.getComputedStyle(parent);
   const block = main.querySelector('[data-scroll-animation-block]');
-  console.log(block.offsetHeight)
-  const test = block.offsetHeight + 500;
   const lenis = new Lenis();
   const header = document.querySelector("[data-header]");
 
