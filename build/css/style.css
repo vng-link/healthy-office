@@ -3544,6 +3544,7 @@ button,
 
 .intro {
   height: calc(100svh - 38px);
+  position: relative;
 }
 
 .intro__background {
@@ -4219,7 +4220,7 @@ button,
 }
 
 .cta {
-  padding: 0 0 300px;
+  padding: 300px 0;
 }
 
 [data-scroll-animation] {
