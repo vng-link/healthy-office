@@ -3543,8 +3543,11 @@ button,
 }
 
 .intro {
-  position: relative;
   height: calc(100svh - 38px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
 .intro__background {
