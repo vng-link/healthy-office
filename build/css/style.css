@@ -3544,7 +3544,10 @@ button,
 
 .intro {
   height: calc(100svh - 38px);
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 38px;
+  width: 100%;
 }
 
 .intro__background {
@@ -4223,27 +4226,18 @@ button,
   padding: 0 0 300px;
 }
 
-[data-scroll-animation] {
-  z-index: 0;
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-[data-scroll-animation-block] {
-  z-index: 3;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  -webkit-transform: translateY(100%);
-  -ms-transform: translateY(100%);
-  transform: translateY(100%);
-  overflow: hidden;
-}
-
 .page {
   padding-top: 38px;
+  position: relative;
+}
+
+.page__wrapper {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: #ffffff;
 }
 
 .title {
@@ -4551,6 +4545,10 @@ button,
     padding: 26px 30px;
   }
 
+  .intro {
+    top: 50px;
+  }
+
   .intro__wrapper {
     padding: 25px 0 40px 0;
   }
@@ -4611,18 +4609,6 @@ button,
 @media (max-width: 807px) {
   .container {
     max-width: 616px;
-  }
-
-  [data-scroll-animation] {
-    height: auto;
-  }
-
-  [data-scroll-animation-block] {
-    z-index: 0;
-    position: relative;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
   }
 }
 

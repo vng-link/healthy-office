@@ -3,7 +3,16 @@
 
 .page {
   padding-top: 38px;
+  position: relative;
   @include vp-1199 {
     padding-top: 50px;
+  }
+  &__wrapper {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: $color-default-white;
   }
 }

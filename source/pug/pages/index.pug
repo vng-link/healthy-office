@@ -12,8 +12,8 @@ block variables
 
 block main
   main.page
-    div(data-scroll-animation)
-      +intro()
+    +intro()
+    .page__wrapper(data-page-wrapper)
       +categories()
-    +cta()
+      +cta()
 block modals

@@ -3,7 +3,13 @@
 
 .intro {
   height: calc(100svh - 38px);
-  position: relative;
+  position: fixed;
+  left: 0;
+  top: 38px;
+  width: 100%;
+  @include vp-1199 {
+    top: 50px;
+  }
 
   &__background {
     position: absolute;
