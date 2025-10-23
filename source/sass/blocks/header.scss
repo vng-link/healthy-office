@@ -12,6 +12,7 @@
   left: 0;
 
   width: 100%;
+  transition: background-color $trans-default;
 
   @include vp-1199 {
     padding: 9px 0;

@@ -3181,6 +3181,8 @@ button,
   top: 0;
   left: 0;
   width: 100%;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .header.is-active {
