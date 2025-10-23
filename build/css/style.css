@@ -4563,7 +4563,7 @@ button,
 
   .intro {
     top: 0px;
-    position: static;
+    position: relative;
   }
 
   .intro__wrapper {
@@ -4598,6 +4598,10 @@ button,
 
   .page {
     padding-top: 50px;
+  }
+
+  .page__wrapper {
+    position: relative;
   }
 
   .title {

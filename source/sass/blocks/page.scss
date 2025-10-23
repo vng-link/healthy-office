@@ -14,5 +14,8 @@
     top: 100%;
     width: 100%;
     background-color: $color-default-white;
+    @include vp-1199 {
+      position: relative;
+  }
   }
 }
