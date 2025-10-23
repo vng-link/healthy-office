@@ -41,12 +41,11 @@ const getScrollAnimation = () => {
       end: () => '+=' + block.offsetHeight,
       scrub: 1,
       pin: !0,
-      /*onLeave: () => {
-        console.log("hello 1")
+      onLeave: () => {
         header.classList.add("is-active");
-      },*/
-      onLeaveBack: () => {
-        console.log("hello 2")
+      },
+      onEnterBack: () => {
+        header.classList.remove("is-active");
       },
     },
   }).to(block, {

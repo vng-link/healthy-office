@@ -15,6 +15,11 @@
     @include vp-1199 {
       border-bottom: 1px solid $color-whisper;
     }
+    &:first-child {
+      .main-nav__link {
+        padding: 7px 21px 7px 0;
+      }
+    }
     &--dropdown {
       &.is-active {
         .main-nav__sub-list {

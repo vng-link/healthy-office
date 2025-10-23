@@ -17,6 +17,11 @@
     padding: 9px 0;
   }
 
+
+  &.is-active {
+    background-color: $color-default-black;
+  }
+
   &.is-open {
     .header__toggle {
       span {
