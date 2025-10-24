@@ -4254,7 +4254,7 @@ button,
 .cta__wrapper {
   display: grid;
   grid-template-columns: 540px auto;
-  gap: 50px;
+  gap: 60px;
 }
 
 .cta__title {
@@ -4285,7 +4285,7 @@ button,
   font-size: 28px;
   line-height: 150%;
   color: #000000;
-  margin: 0 0 20px;
+  margin: 0 0 40px;
 }
 
 .cta__familar {
@@ -4426,8 +4426,14 @@ button,
 }
 
 .cta__advantage-icon svg {
-  width: 8px;
-  height: 12px;
+  width: 15px;
+  height: 11px;
+}
+
+.cta__avantage-description {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
 }
 
 .page {
@@ -4628,6 +4634,26 @@ button,
 
   .categories__item--big {
     grid-column: unset;
+  }
+
+  .cta__wrapper {
+    gap: 50px;
+  }
+
+  .cta__callback {
+    display: block;
+  }
+
+  .cta__callback-description {
+    margin: 0 0 30px;
+  }
+
+  .cta__advantages-blocks-wrapper {
+    display: block;
+  }
+
+  .cta__advantage {
+    margin: 0 0 20px;
   }
 }
 

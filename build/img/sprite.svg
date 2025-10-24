@@ -15,6 +15,8 @@
 <path d="M13.5 11.5L19 16.5L13.5 21.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="category-card-icon" viewBox="0 0 12 12"><g fill="none">
 <path d="M11.0769 11.5385V0.923077H0.461538C0.206638 0.923077 2.10257e-08 0.716439 0 0.461538C2.75098e-08 0.206638 0.206638 2.10257e-08 0.461538 0H12V11.5385C12 11.7934 11.7934 12 11.5385 12C11.2836 12 11.0769 11.7934 11.0769 11.5385Z" fill="#4C3870"/>
+</g></symbol><symbol id="cta-advantage-icon" viewBox="0 0 15 11"><g fill="none">
+<path d="M1 4.2L5.875 9L14 1" stroke="white" stroke-width="2" stroke-linecap="round"/>
 </g></symbol><symbol id="dropdown-mobile" viewBox="0 0 9 6"><g fill="none">
 <path d="M8.5 0.5L4.5 4.5L0.5 0.5" stroke="black" stroke-linecap="round"/>
 </g></symbol><symbol id="logo-header" viewBox="0 0 35 19"><g fill="none">

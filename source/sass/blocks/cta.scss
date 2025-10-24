@@ -6,7 +6,10 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 540px auto;
-    gap: 50px;
+    gap: 60px;
+    @include vp-1479 {
+      gap: 50px;
+    }
   }
   &__title {
     margin: 0 0 20px;
@@ -32,7 +35,7 @@
     font-size: 28px;
     line-height: 150%;
     color: $color-default-black;
-    margin: 0 0 20px;
+    margin: 0 0 40px;
   }
 
   &__familar {
@@ -69,13 +72,15 @@
     margin: 0 0 80px;
   }
 
-
   &__callback {
     display: flex;
     align-items: center;
     gap: 30px;
     padding: 0 15px 0 0;
     margin: 0 0 30px;
+    @include vp-1479 {
+      display: block;
+    }
   }
 
   &__callback-description {
@@ -83,6 +88,9 @@
     font-size: 24px;
     line-height: 130%;
     margin: 0;
+    @include vp-1479 {
+      margin: 0 0 30px;
+    }
   }
 
   &__advantages-blocks {
@@ -100,6 +108,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    @include vp-1479 {
+      display: block;
+    }
   }
 
 
@@ -107,6 +118,9 @@
     display: flex;
     align-items: center;
     gap: 40px;
+    @include vp-1479 {
+      margin: 0 0 20px;
+    }
   }
 
   &__advantage-handler {
@@ -142,9 +156,14 @@
     z-index: 2;
     overflow: visible;
     svg {
-      width: 8px;
-      height: 12px;
+      width: 15px;
+      height: 11px;
     }
+  }
+  &__avantage-description {
+    font-size: 20px;
+    line-height: 140%; 
+    margin: 0;
   }
 
 }
