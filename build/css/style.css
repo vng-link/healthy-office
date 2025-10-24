@@ -4257,6 +4257,11 @@ button,
   gap: 60px;
 }
 
+.cta__column-wrapper {
+  position: sticky;
+  top: 90px;
+}
+
 .cta__title {
   margin: 0 0 20px;
 }
@@ -4337,9 +4342,9 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 30px;
   padding: 0 15px 0 0;
   margin: 0 0 30px;
@@ -4353,7 +4358,7 @@ button,
 }
 
 .cta__advantages-blocks {
-  margin-bottom: 80px;
+  margin: 0 0 80px;
 }
 
 .cta__advantages-blocks-title {
@@ -4823,6 +4828,62 @@ button,
     margin: 0 0 30px;
   }
 
+  .cta__wrapper {
+    display: block;
+  }
+
+  .cta__column:first-child {
+    margin: 0 0 50px;
+  }
+
+  .cta__image {
+    display: none;
+  }
+
+  .cta__familar-blocks-title {
+    font-size: 26px;
+    margin: 0 0 20px;
+  }
+
+  .cta__familar-title {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .cta__familar-description {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .cta__familar-blocks {
+    margin: 0 0 50px;
+  }
+
+  .cta__callback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .cta__callback-description {
+    font-size: 18px;
+    line-height: 140%;
+    margin: 0;
+  }
+
+  .cta__advantages-blocks {
+    margin: 0 0 50px;
+  }
+
+  .cta__advantages-blocks-title {
+    font-size: 26px;
+  }
+
+  .cta__avantage-description {
+    font-size: 18px;
+    line-height: 120%;
+  }
+
   .page {
     padding-top: 50px;
   }
@@ -4857,6 +4918,25 @@ button,
 @media (max-width: 807px) {
   .container {
     max-width: 616px;
+  }
+
+  .cta__familar-blocks-title {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .cta__familar-title {
+    font-size: 18px;
+  }
+
+  .cta__advantages-blocks-title {
+    font-size: 22px;
+    line-height: 140%;
+  }
+
+  .cta__avantage-description {
+    font-size: 16px;
+    line-height: 150%;
   }
 }
 
@@ -4926,6 +5006,49 @@ button,
 
   .categories__description {
     font-size: 16px;
+  }
+
+  .cta__column:first-child {
+    margin: 0 0 30px;
+  }
+
+  .cta__familar-blocks-title {
+    line-height: 110%;
+  }
+
+  .cta__familar {
+    display: block;
+  }
+
+  .cta__familar {
+    margin: 0 0 30px;
+  }
+
+  .cta__familar-image {
+    margin: 0 0 10px;
+  }
+
+  .cta__familar-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 115%;
+  }
+
+  .cta__callback {
+    display: block;
+  }
+
+  .cta__callback-btn {
+    width: 100%;
+  }
+
+  .cta__callback-description {
+    line-height: 130%;
+    margin: 0 0 30px;
+  }
+
+  .cta__advantages-blocks-title {
+    line-height: 110%;
   }
 
   .title {

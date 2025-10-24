@@ -3,32 +3,64 @@
 
 .cta {
   padding: 50px 0 120px 0;
+
   &__wrapper {
     display: grid;
     grid-template-columns: 540px auto;
     gap: 60px;
+
     @include vp-1479 {
       gap: 50px;
     }
+
+    @include vp-1199 {
+      display: block;
+    }
   }
+
+
+  &__column-wrapper {
+    position: sticky;
+    top: 90px;
+  }
+
+  &__column {
+    &:first-child {
+      @include vp-1199 {
+        margin: 0 0 50px;
+      }
+
+      @include vp-615 {
+          margin: 0 0 30px;
+      }
+    }
+  }
+
   &__title {
     margin: 0 0 20px;
   }
+
   &__description {
     line-height: 150%;
     color: $color-dim-gray;
     margin: 0 0 20px;
   }
+
   &__image {
     height: 310px;
     border-radius: 10px;
     overflow: hidden;
+
+    @include vp-1199 {
+      display: none;
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
-  } 
+  }
 
   &__familar-blocks-title {
     font-weight: 500;
@@ -36,6 +68,19 @@
     line-height: 150%;
     color: $color-default-black;
     margin: 0 0 40px;
+
+    @include vp-1199 {
+      font-size: 26px;
+      margin: 0 0 20px;
+    }
+
+    @include vp-807 {
+      font-size: 22px;
+      line-height: 140%;
+    }
+    @include vp-615 { 
+      line-height: 110%;
+    }
   }
 
   &__familar {
@@ -43,43 +88,94 @@
     align-items: center;
     gap: 30px;
     margin: 0 0 20px;
+    @include vp-615 {
+      display: block;
+    }
+    @include vp-615 {
+      margin: 0 0 30px;
+    }
   }
+
   &__familar-image {
     flex-shrink: 0;
     width: 160px;
     height: 160px;
     overflow: hidden;
     border-radius: 10px;
+    @include vp-615 {
+      margin: 0 0 10px;
+    }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   &__familar-title {
     font-weight: 500;
     font-size: 24px;
     line-height: 130%;
     color: $color-true-v;
     margin: 0 0 10px 0;
+
+    @include vp-1199 {
+      font-size: 22px;
+      line-height: 140%;
+    }
+
+    @include vp-807 {
+      font-size: 18px;
+    }
+    @include vp-615 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 115%;
+    }
   }
+
   &__familar-description {
     font-size: 20px;
     line-height: 140%;
     margin: 0;
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
+
   &__familar-blocks {
     margin: 0 0 80px;
+
+    @include vp-1199 {
+      margin: 0 0 50px;
+    }
   }
 
   &__callback {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 30px;
     padding: 0 15px 0 0;
     margin: 0 0 30px;
+
     @include vp-1479 {
       display: block;
+    }
+
+    @include vp-1199 {
+      display: flex;
+    }
+    @include vp-615 {
+      display: block;
+    }
+  }
+
+  &__callback-btn {
+    @include vp-615 {
+      width: 100%;
     }
   }
 
@@ -88,13 +184,28 @@
     font-size: 24px;
     line-height: 130%;
     margin: 0;
+
     @include vp-1479 {
+      margin: 0 0 30px;
+    }
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 140%;
+      margin: 0;
+    }
+    @include vp-615 {
+      line-height: 130%;
       margin: 0 0 30px;
     }
   }
 
   &__advantages-blocks {
-    margin-bottom: 80px;
+    margin: 0 0 80px;
+
+    @include vp-1199 {
+      margin: 0 0 50px;
+    }
   }
 
   &__advantages-blocks-title {
@@ -102,12 +213,24 @@
     font-size: 28px;
     line-height: 150%;
     margin: 0 0 20px;
+
+    @include vp-1199 {
+      font-size: 26px;
+    }
+    @include vp-807 {
+      font-size: 22px;
+      line-height: 140%;
+    }
+    @include vp-615 {
+      line-height: 110%;
+    }    
   }
 
   &__advantages-blocks-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
     @include vp-1479 {
       display: block;
     }
@@ -118,6 +241,7 @@
     display: flex;
     align-items: center;
     gap: 40px;
+
     @include vp-1479 {
       margin: 0 0 20px;
     }
@@ -127,7 +251,8 @@
     flex-shrink: 0;
     position: relative;
     width: 160px;
-    height: 160px;;
+    height: 160px;
+    ;
   }
 
   &__advantage-image {
@@ -135,12 +260,14 @@
     height: 160px;
     overflow: hidden;
     border-radius: 10px;
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
+
   &__advantage-icon {
     width: 32px;
     height: 32px;
@@ -155,15 +282,27 @@
     border-radius: 100%;
     z-index: 2;
     overflow: visible;
+
     svg {
       width: 15px;
       height: 11px;
     }
   }
+
   &__avantage-description {
     font-size: 20px;
-    line-height: 140%; 
+    line-height: 140%;
     margin: 0;
+
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 120%;
+    }
+
+    @include vp-807 {
+      font-size: 16px;
+      line-height: 150%;
+    }
   }
 
 }

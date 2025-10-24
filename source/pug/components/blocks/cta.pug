@@ -3,10 +3,11 @@ mixin cta()
     .container
       .cta__wrapper
         .cta__column
-          h2.cta__title.title  Рабочий день без усталости: инвестируйте в энергию вашей команды
-          p.cta__description Снижайте риски, связанные с малоподвижностью, и раскрывайте полный потенциал сотрудников с помощью организации рабочего пространства healthy office
-          .cta__image
-            +img("content/cta", "chart", "webp", "540", "309", "")
+          .cta__column-wrapper 
+            h2.cta__title.title  Рабочий день без усталости: инвестируйте в энергию вашей команды
+            p.cta__description Снижайте риски, связанные с малоподвижностью, и раскрывайте полный потенциал сотрудников с помощью организации рабочего пространства healthy office
+            .cta__image
+              +img("content/cta", "chart", "webp", "540", "309", "")
         .cta__column  
 
             .cta__familar-blocks
