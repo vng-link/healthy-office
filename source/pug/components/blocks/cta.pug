@@ -8,9 +8,9 @@ mixin cta()
           .cta__image
             +img("content/cta", "chart", "webp", "540", "309", "")
         .cta__column  
-            h3.cta__sub-title Знакомо? День в офисе: все болит, глаза слипаются, а сил нет
-            .cta__familar-blocks
 
+            .cta__familar-blocks
+              h3.cta__familar-blocks-title Знакомо? День в офисе: все болит, глаза слипаются, а сил нет
               .cta__familar
                   .cta__familar-image
                     +img("content/cta", "familar-1", "webp", "160", "160", "")
@@ -31,6 +31,38 @@ mixin cta()
                 span
                   +icon("btn-arrow", 8, 12)
             
+            .cta__advantages-blocks 
+              h3.cta__advantages-blocks-title Как мебель Healthy Office влияет на здоровье
+              .cta__advantages-blocks-wrapper
 
+                 .cta__advantage
+                  .cta__advantage-handler
+                    .cta__advantage-image 
+                      +img("content/cta", "advantage-1", "webp", "160", "160", "")
+                    .cta__advantage-icon
+                        +icon("btn-arrow", 8, 12)
+                  p.cta__avantage-description Улучшает кровоснабжение                                   
 
+                 .cta__advantage
+                  .cta__advantage-handler
+                    .cta__advantage-image 
+                      +img("content/cta", "advantage-2", "webp", "160", "160", "")
+                    .cta__advantage-icon
+                        +icon("btn-arrow", 8, 12)
+                  p.cta__avantage-description Стимулирует отток лимфы к органам и тканям
 
+                 .cta__advantage
+                  .cta__advantage-handler
+                    .cta__advantage-image 
+                      +img("content/cta", "advantage-3", "webp", "160", "160", "")
+                    .cta__advantage-icon
+                        +icon("btn-arrow", 8, 12)
+                  p.cta__avantage-description Активизирует обмен веществ 
+
+                 .cta__advantage
+                  .cta__advantage-handler
+                    .cta__advantage-image 
+                      +img("content/cta", "advantage-4", "webp", "160", "160", "")
+                    .cta__advantage-icon
+                        +icon("btn-arrow", 8, 12)
+                  p.cta__avantage-description Укрепляет мышечный корсет поясницы и нижних конечностей 

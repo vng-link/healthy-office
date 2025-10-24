@@ -26,7 +26,8 @@
       object-fit: cover;
     }
   } 
-  &__sub-title {
+
+  &__familar-blocks-title {
     font-weight: 500;
     font-size: 28px;
     line-height: 150%;
@@ -44,6 +45,8 @@
     flex-shrink: 0;
     width: 160px;
     height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
     img {
       width: 100%;
       height: 100%;
@@ -72,6 +75,7 @@
     align-items: center;
     gap: 30px;
     padding: 0 15px 0 0;
+    margin: 0 0 30px;
   }
 
   &__callback-description {
@@ -80,4 +84,67 @@
     line-height: 130%;
     margin: 0;
   }
+
+  &__advantages-blocks {
+    margin-bottom: 80px;
+  }
+
+  &__advantages-blocks-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 150%;
+    margin: 0 0 20px;
+  }
+
+  &__advantages-blocks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+
+  &__advantage {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__advantage-handler {
+    flex-shrink: 0;
+    position: relative;
+    width: 160px;
+    height: 160px;;
+  }
+
+  &__advantage-image {
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__advantage-icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    background-color: $color-shamrock;
+    border-radius: 100%;
+    z-index: 2;
+    overflow: visible;
+    svg {
+      width: 8px;
+      height: 12px;
+    }
+  }
+
 }
