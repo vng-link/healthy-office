@@ -3220,6 +3220,16 @@ button,
   transform: translateX(0);
 }
 
+.header__handler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3349,7 +3359,7 @@ button,
   opacity: 0.8;
 }
 
-.header__handler {
+.header__actions-handler {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4469,6 +4479,14 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .header__handler {
+    gap: unset;
+  }
+
+  .header__wrapper {
+    gap: unset;
   }
 
   .header__actions {

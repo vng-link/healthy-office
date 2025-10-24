@@ -60,11 +60,23 @@
   }
 
 
+  &__handler {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include vp-1199 {
+      gap: unset;
+    }
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    @include vp-1199 {
+      gap: unset;
+    }
   }
 
   
@@ -171,7 +183,7 @@
     }
   }
 
-  &__handler {
+  &__actions-handler {
     display: flex;
     align-items: center;
     gap: 30px;
