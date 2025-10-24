@@ -21,6 +21,17 @@
 
   &.is-active {
     background-color: $color-default-black;
+    .header__logo--left {
+      display: flex;
+      @include vp-1199 {
+        display: none;
+      }
+    }
+    .header__logo--center {
+      @include vp-1199 {
+        display: flex;
+      }
+    }
   }
 
   &.is-open {
@@ -56,7 +67,7 @@
     gap: 30px;
   }
 
-  /*
+  
   &__logo {
     justify-content: center;
     align-items: center;
@@ -68,7 +79,7 @@
       height: 18px;
     }
   }
-  */
+
 
 
   &__actions {

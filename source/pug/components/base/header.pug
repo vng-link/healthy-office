@@ -44,6 +44,8 @@ mixin header(headerMods, currentUrl)
   header.header(class=headerMods data-header data-fix-block)
     .container
       .header__wrapper
+        a.header__logo.header__logo--left(href="#")
+            +icon("logo-header", 35, 19)
         .header__main-nav.main-nav
           .main-nav__menu
             .container
@@ -65,6 +67,8 @@ mixin header(headerMods, currentUrl)
 
         .header__actions
             a.header__phone(href="tel:84951233414", aria-label="Позвонить по телефону") +7 (495) 123-34-14
+            a.header__logo.header__logo--center(href="#")
+                +icon("logo-header", 35, 19)
             .header__handler
               a.header__cart(href="#", aria-label="Перейти в корзину")
                   +icon("shopping-cart", 20, 20)
