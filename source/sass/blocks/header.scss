@@ -21,15 +21,16 @@
 
   &.is-active {
     background-color: $color-default-black;
-    .header__logo--left {
+    .header__logo {
       display: flex;
+      margin: 0 10px 0 0;
       @include vp-1199 {
-        display: none;
+        margin: unset;
       }
     }
-    .header__logo--center {
+    .header__phone {
       @include vp-1199 {
-        display: flex;
+        order: -1;
       }
     }
   }
@@ -61,21 +62,18 @@
 
 
   &__handler {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    flex-grow: 1;
     @include vp-1199 {
-      gap: unset;
+      position: absolute;
     }
   }
 
   &__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     @include vp-1199 {
-      gap: unset;
+      justify-content: space-between;
     }
   }
 
@@ -99,8 +97,7 @@
     align-items: center;
     gap: 20px;
     @include vp-1199 {
-      width: 100%;
-      justify-content: space-between;
+      gap: 30px;
     }
   }
   &__phone {
@@ -183,17 +180,6 @@
     }
   }
 
-  &__actions-handler {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  &__main-nav {
-    @include vp-1199 {
-      position: absolute;
-    }
-  }
 }
 
 

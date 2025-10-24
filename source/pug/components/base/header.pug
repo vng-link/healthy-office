@@ -44,9 +44,9 @@ mixin header(headerMods, currentUrl)
   header.header(class=headerMods data-header data-fix-block)
     .container
       .header__wrapper
-        .header__handler 
-          a.header__logo.header__logo--left(href="#")
+        a.header__logo(href="#")
               +icon("logo-header", 35, 19)
+        .header__handler 
           .header__main-nav.main-nav
             .main-nav__menu
               .container
@@ -65,15 +65,11 @@ mixin header(headerMods, currentUrl)
                             each subitem in item.dropdown
                               li.main-nav__sub-item
                                   a.main-nav__sub-link(href=subitem.href)!=subitem.text
-
+        a.header__phone(href="tel:84951233414", aria-label="Позвонить по телефону") +7 (495) 123-34-14
         .header__actions
-              a.header__phone(href="tel:84951233414", aria-label="Позвонить по телефону") +7 (495) 123-34-14
-              a.header__logo.header__logo--center(href="#")
-                  +icon("logo-header", 35, 19)
-              .header__actions-handler
-                a.header__cart(href="#", aria-label="Перейти в корзину")
-                    +icon("shopping-cart", 20, 20)
-                button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.header__toggle
-                  span
-                  span
-                  span
+            a.header__cart(href="#", aria-label="Перейти в корзину")
+                +icon("shopping-cart", 20, 20)
+            button(type="button" aria-label="Переключатель отображения меню", aria-pressed="false" data-toggle-menu).btn-reset.header__toggle
+              span
+              span
+              span

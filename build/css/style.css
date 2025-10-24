@@ -3189,10 +3189,11 @@ button,
   background-color: #000000;
 }
 
-.header.is-active .header__logo--left {
+.header.is-active .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 10px 0 0;
 }
 
 .header.is-open .header__toggle span:nth-child(1) {
@@ -3221,26 +3222,19 @@ button,
 }
 
 .header__handler {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 30px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .header__logo {
@@ -3357,16 +3351,6 @@ button,
 
 .header__toggle:focus-visible {
   opacity: 0.8;
-}
-
-.header__actions-handler {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .main-nav__list {
@@ -4471,37 +4455,32 @@ button,
     padding: 9px 0;
   }
 
-  .header.is-active .header__logo--left {
-    display: none;
+  .header.is-active .header__logo {
+    margin: unset;
   }
 
-  .header.is-active .header__logo--center {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .header.is-active .header__phone {
+    -webkit-box-ordinal-group: 0;
+    -ms-flex-order: -1;
+    order: -1;
   }
 
   .header__handler {
-    gap: unset;
+    position: absolute;
   }
 
   .header__wrapper {
-    gap: unset;
-  }
-
-  .header__actions {
-    width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
 
-  .header__toggle {
-    display: block;
+  .header__actions {
+    gap: 30px;
   }
 
-  .header__main-nav {
-    position: absolute;
+  .header__toggle {
+    display: block;
   }
 
   .main-nav__list {
