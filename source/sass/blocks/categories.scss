@@ -7,6 +7,9 @@
   @include vp-1199 {
     padding: 50px 0 50px 0;
   }
+  @include vp-615 {
+    padding: 30px 0 50px 0;
+  }
   &__wrapper {
     display: grid;
     grid-template-columns:  repeat(6, 1fr);
@@ -50,7 +53,7 @@
     max-width: 450px;
     margin: 0 0 48px 0;
     @include vp-1199 {
-      margin: 0 0 30x;
+      margin: 0 0 30px;
     }
     @include vp-615 {
       font-size: 16px;
