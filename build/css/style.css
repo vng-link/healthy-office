@@ -4672,6 +4672,7 @@ button,
 @media (max-width: 615px) {
   .container {
     max-width: 400px;
+    padding: 0 15px;
   }
 
   .btn {
