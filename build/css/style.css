@@ -3169,7 +3169,7 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1480px;
+  max-width: 1540px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -3465,9 +3465,15 @@ button,
 }
 
 .btn--white {
-  border: 1px solid #6f6d7b;
+  border: 1px solid #b8b8b8;
   background-color: #ffffff;
-  color: #2a2b30;
+  color: #000000;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.btn--white:focus-visible {
+  opacity: 0.8;
 }
 
 .btn span {
@@ -4242,7 +4248,104 @@ button,
 }
 
 .cta {
-  padding: 0 0 300px;
+  padding: 50px 0 120px 0;
+}
+
+.cta__wrapper {
+  display: grid;
+  grid-template-columns: 540px auto;
+  gap: 50px;
+}
+
+.cta__title {
+  margin: 0 0 20px;
+}
+
+.cta__description {
+  line-height: 150%;
+  color: #717171;
+  margin: 0 0 20px;
+}
+
+.cta__image {
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cta__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cta__sub-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0 0 20px;
+}
+
+.cta__familar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 0 20px;
+}
+
+.cta__familar-image {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 160px;
+  height: 160px;
+}
+
+.cta__familar-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cta__familar-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #8f74c0;
+  margin: 0 0 10px 0;
+}
+
+.cta__familar-description {
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
+}
+
+.cta__familar-blocks {
+  margin: 0 0 80px;
+}
+
+.cta__callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta__callback-description {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  margin: 0;
 }
 
 .page {
@@ -4755,6 +4858,10 @@ button,
   }
 
   .main-nav__link:hover {
+    opacity: 0.8;
+  }
+
+  .btn--white:hover {
     opacity: 0.8;
   }
 

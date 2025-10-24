@@ -32,9 +32,13 @@
     padding: 12px 30px;
   }
   &--white {
-    border: 1px solid $color-dolphin;
+    border: 1px solid $color-pink-swan;
     background-color: $color-default-white;
-    color: $color-black-russian-2;
+    color: $color-default-black;
+    transition: opacity $trans-default;
+    @include hover-focus {
+      opacity: 0.8;
+    }
   }
 
   span {

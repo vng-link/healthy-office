@@ -3,5 +3,34 @@ mixin cta()
     .container
       .cta__wrapper
         .cta__column
-          h1.cta__title  Рабочий день без усталости: инвестируйте в энергию вашей команды
+          h2.cta__title.title  Рабочий день без усталости: инвестируйте в энергию вашей команды
+          p.cta__description Снижайте риски, связанные с малоподвижностью, и раскрывайте полный потенциал сотрудников с помощью организации рабочего пространства healthy office
+          .cta__image
+            +img("content/cta", "chart", "webp", "540", "309", "")
+        .cta__column  
+            h3.cta__sub-title Знакомо? День в офисе: все болит, глаза слипаются, а сил нет
+            .cta__familar-blocks
+
+              .cta__familar
+                  .cta__familar-image
+                    +img("content/cta", "familar-1", "webp", "160", "160", "")
+                  .cta__familar-body 
+                    h4.cta__familar-title У меня все затекает!
+                    p.cta__familar-description Вы сидите в одной и той же позе уже четвертый час. Ноги затекли, шея онемела, а в плечах — каменная глыба. Это не просто дискомфорт. Это ваше тело кричит: «Двигайся!»
+
+              .cta__familar
+                  .cta__familar-image
+                    +img("content/cta", "familar-2", "webp", "160", "160", "")
+                  .cta__familar-body 
+                    h4.cta__familar-title Спина просто отваливается!
+                    p.cta__familar-description Ноющий, тянущий комок напряжения между лопаток и прострелы в пояснице — ваши верные спутники? Виной всему — статичная поза и часто — неэргономичный стул и стол
+
+            .cta__callback 
+              p.cta__callback-description Совместно со специалистами-биомеханиками мы разработали методику эффективного применения мебели healthy office, которую вы можете получить, оставив заявку
+              button.btn-reset.btn.btn--white.cta__callback-btn(type="button" data-open-modal="modal-callback-form") Оставить заявку
+                span
+                  +icon("btn-arrow", 8, 12)
+            
+
+
 
